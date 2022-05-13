@@ -5,7 +5,7 @@ const projects = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     tags: ["html", "css", "javascript"],
-    image: "/img/Vector(3).png",
+    image: "/img/Snapshoot(1).png",
     liveVersion: "See Live",
     sourceLink: "See Source",
     btnImg1: "/img/Vector(2).png",
@@ -46,7 +46,7 @@ const projects = [
     image: "/img/Snapshoot.png",
     liveVersion: "See Live",
     sourceLink: "See Source",
-    btnImg1: "/img/Vector(2).png",
+    btnImg1: "/img/Vector(1).png",
     btnImg2: "/img/Vector(1).png",
   },
 ];
@@ -70,7 +70,7 @@ function open(index) {
   <div class="popup-content ">
   <div class="popup-heading">
   <h1 class="popup-project1-title">${title}</h1>
-  <button type="button" class="popup-close">X</button>
+  <a="button" class="popup-close">&times;</a>
   </div>
   <ul class="popup-example-dev">
   <li class="dev1">${dev1}</li>
@@ -89,8 +89,8 @@ function open(index) {
   <li class="popup-tag">${tags3}</li>
   </ul>
   <div class="popup-button">
-  <button type="button" class="popup-button1">${liveVersion}<img class="" src='assets/icons/github.svg'></button>
-  <button type="button" class="popup-button1">${sourceLink}<img class=""  src='/assets/icons/twitter.svg'></button>
+  <button type="button" class="popup-button1">${liveVersion}<img class="" src='/img/Icone.png'></button>
+  <button type="button" class="popup-button1">${sourceLink}<img class=""  src='/img/Vectors.png'></button>
   </div>
   </div>
   </div>
@@ -103,9 +103,9 @@ function open(index) {
 
   container.style.display = "block";
 
-  const buttonClose = document.querySelector("popup-close");
+  const buttonClose = document.querySelector(".popup-close");
   buttonClose.addEventListener("click", () => {
-    const popup = document.querySelector("popup-menus");
+    const popup = document.querySelector(".popup-menus");
     popup.style.display = "none";
   });
 }
